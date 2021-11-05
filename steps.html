@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>UNAB</title>
+    <meta charset="UTF-8">
+    <link href="img/icons/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=81537" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=81537" type="text/javascript"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#">
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    
+  </head>
+  <body>
+    <header> 
+      <div class="header__wrap"> 
+        <div class="header__flex"> 
+          <div class="header__logo"> <img src="img/icons/logo-unab-dark.png"></div>
+          <div class="header__info"> <span>Identificación</span></div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <section class="section--steps">
+        <form class="form">
+          <div data-index="1" class="section__step section__step--show">
+            <div class="section__wrap">
+              <div class="section__body">
+                <div class="section__content">
+                  <div class="section__gif"><img src="img/icons/icono-animado-1.gif"></div>
+                  <h1 class="section__title">¡Hola!</h1>
+                  <p class="section__description">¿Cuál es tu nombre?</p>
+                  <div class="section__form"> 
+                    <div class="form__element"> 
+                      <div class="form__input">
+                        <input type="text" placeholder="Ingrese su nombre">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__buttons"> <a href="index.html" class="btn btn--gray">Volver</a><a data-next-step class="btn">Siguiente </a></div>
+                  <div class="section__progress"> 
+                    <div class="section__number">1/6</div>
+                    <div class="section__progress__bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-index="2" class="section__step">
+            <div class="section__header">
+              <h2 class="section__title">Hola Juan,</h2>
+              <p class="section__description">Ingresa tu RUT y correo</p>
+            </div>
+            <div class="section__body">
+              <div class="section__bg"> 
+                <div class="bg"> <img src="img/uploads/2.jpg"></div>
+              </div>
+              <div class="section__wrap">
+                <div class="section__form__box"> 
+                  <div class="form__element"> 
+                    <div class="form__title">Tipo de documento </div>
+                    <div class="form__input"> 
+                      <select name="#">
+                        <option disabled>Seleccione Rut o Pasaporte</option>
+                        <option value="#">Rut</option>
+                        <option value="#">Pasaporte</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__element"> 
+                    <div class="form__title">N° RUT o Pasaporte</div>
+                    <div class="form__input"> 
+                      <input type="text" name="#" placeholder="Ingrese su N°">
+                    </div>
+                  </div>
+                  <div class="form__element"> 
+                    <div class="form__title">Correo electrónico </div>
+                    <div class="form__input"> 
+                      <input type="text" name="#" placeholder="Ingrese su correo electrónico">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section__footer">
+              <div class="section__buttons"> <a data-prev-step class="btn btn--gray">Volver</a><a data-next-step class="btn">Siguiente </a></div>
+              <div class="section__progress"> 
+                <div class="section__number">2/6</div>
+                <div class="section__progress__bar step--2"> </div>
+              </div>
+            </div>
+          </div>
+          <div data-index="3" class="section__step">
+            <div class="section__header">
+              <h2 class="section__title">Juan, ¿nos darías tus datos?</h2>
+              <p class="section__description">Para poder armar tu perfil</p>
+            </div>
+            <div class="section__body">
+              <div class="section__bg"> 
+                <div class="bg"> <img src="img/uploads/2.jpg"></div>
+              </div>
+              <div class="section__wrap section__wrap--xl">					
+                <div class="cols"> 
+                  <div class="col-xs-12 col-md-6">
+                    <div class="section__form__box"> 
+                      <div class="section__form__title">Información del estudiante</div>
+                      <div class="form__element"> 
+                        <div class="form__title">Nombre</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#" placeholder="Ingrese su nombre completo">
+                        </div>
+                      </div>
+                      <div class="form__element"> 
+                        <div class="form__title">Apellidos</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#" placeholder="Ingrese sus apellidos">
+                        </div>
+                      </div>
+                      <div class="form__element"> 
+                        <div class="form__title">Teléfono celular</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#" placeholder="Ingrese su teléfono celular">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="section__form__box"> 
+                      <div class="section__form__title">Información del colegio</div>
+                      <div class="form__element"> 
+                        <div class="form__title">Región</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option disabled>Seleccione la región</option>
+                            <option value="#">Lorem</option>
+                            <option value="#">Ipsum</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form__element"> 
+                        <div class="form__title">Comuna</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option disabled>Seleccione la comuna</option>
+                            <option value="#">Lorem</option>
+                            <option value="#">Ipsum</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form__element"> 
+                        <div class="form__title">Colegio</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option disabled>Seleccione su colegio</option>
+                            <option value="#">Lorem</option>
+                            <option value="#">Ipsum				</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form__element"> 
+                        <div class="form__title">Curso</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option disabled>Seleccione su último curso</option>
+                            <option value="#">Lorem</option>
+                            <option value="#">Ipsum	</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section__footer">
+              <div class="section__buttons"> <a data-prev-step class="btn btn--gray">Volver</a><a data-next-step class="btn">Siguiente </a></div>
+              <div class="section__progress"> 
+                <div class="section__number">3/6</div>
+                <div class="section__progress__bar step--3"></div>
+              </div>
+            </div>
+          </div>
+          <div data-index="4" class="section__step">
+            <div class="section__header">
+              <h2 class="section__title">Juan, de acuerdo a tus ensayos</h2>
+              <p class="section__description">¿qué puntaje crees que podrías obtener en la PDT?</p>
+            </div>
+            <div class="section__body">
+              <div class="section__bg"> 
+                <div class="bg"> <img src="img/uploads/2.jpg"></div>
+              </div>
+              <div class="section__wrap">
+                <div class="cols"> 
+                  <div class="col-xs-12">
+                    <div class="section__form__box"> 
+                      <div class="section__form__title">Ingresa puntajes PDT</div>
+                      <div class="form__element"> 
+                        <div class="form__title">Lenguaje y comunicación</div>
+                        <div class="form__input"> 
+                          <input type="number" name="#" placeholder="Ej: 600">
+                        </div>
+                      </div>
+                      <div class="form__element"> 
+                        <div class="form__title">Matemáticas</div>
+                        <div class="form__input"> 
+                          <input type="number" name="#" placeholder="Ej: 600">
+                        </div>
+                      </div>
+                      <div class="form__element"> 
+                        <div class="form__title">Historia y CCSS</div>
+                        <div class="form__input"> 
+                          <input type="number" name="#" placeholder="Ej: 600">
+                        </div>
+                      </div>
+                      <div class="form__element"> 
+                        <div class="form__title">Ciencias</div>
+                        <div class="form__input"> 
+                          <input type="number" name="#" placeholder="Ej: 600">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="section__form__box"> 
+                      <div class="section__form__title">Ingresa promedio enseñanza media</div>
+                      <div class="form__element"> 
+                        <div class="form__title">Promedio de notas</div>
+                        <div class="form__input"> 
+                          <input type="number" name="#" placeholder="Ej: 5,8">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section__footer">
+              <div class="section__buttons"> <a data-prev-step class="btn btn--gray">Volver</a><a data-next-step class="btn">Siguiente </a></div>
+              <div class="section__progress"> 
+                <div class="section__number">4/6</div>
+                <div class="section__progress__bar step--4"> </div>
+              </div>
+            </div>
+          </div>
+          <div data-index="5" class="section__step">
+            <div class="section__header">
+              <h2 class="section__title">Juan, ya vamos terminando...</h2>
+              <p class="section__description">Completa estos datos, que nos ayudarán a calcular el valor de tu carrera.</p>
+              <p class="section__info">Información sobre créditos y becas estatales <a href="#">aquí</a></p>
+            </div>
+            <div class="section__body">
+              <div class="section__bg"> 
+                <div class="bg"> <img src="img/uploads/2.jpg"></div>
+              </div>
+              <div class="section__wrap">
+                <div class="cols"> 
+                  <div class="col-xs-12">
+                    <div class="section__form__box"> 
+                      <div class="section__form__title">Información Créditos</div>
+                      <div class="form__element__checkbox">
+                        <div class="form__title">¿Crees que vas a utilizar CAE?</div>
+                        <div class="form__checkboxs">
+                          <div class="form__checkbox">
+                            <div class="form__input">
+                              <input type="radio" name="cae" value="1">
+                            </div>
+                            <div class="form__text">Si</div>
+                          </div>
+                          <div class="form__checkbox">
+                            <div class="form__input">
+                              <input type="radio" name="cae" value="2">
+                            </div>
+                            <div class="form__text">No</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__element__checkbox">
+                        <div class="form__title">¿Crees que pedirás becas del estado?</div>
+                        <div class="form__checkboxs">
+                          <div class="form__checkbox">
+                            <div class="form__input">
+                              <input type="radio" name="becas" value="1">
+                            </div>
+                            <div class="form__text">Si</div>
+                          </div>
+                          <div class="form__checkbox">
+                            <div class="form__input">
+                              <input type="radio" name="becas" value="2">
+                            </div>
+                            <div class="form__text">No</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="section__form__box"> 
+                      <div class="section__form__title">Información Familiar</div>
+                      <div class="form__element"> 
+                        <div class="form__title">¿Cuantos integrantes viven en tu casa?</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">1</option>
+                            <option value="#">2</option>
+                            <option value="#">3</option>
+                            <option value="#">4</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form__element"> 
+                        <div class="form__title">¿Ingreso total mensual de tu hogar?</div>
+                        <div class="form__input"> 
+                          <select name="#">
+                            <option value="#">Entre $100.000 y $200.000</option>
+                            <option value="#">Entre $300.000 y $400.000</option>
+                            <option value="#">Entre $500.000 y $600.000</option>
+                            <option value="#">Entre $700.000 y $800.000</option>
+                            <option value="#">Entre $900.000 y $1.000.000</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section__footer">
+              <div class="section__buttons"> <a data-prev-step class="btn btn--gray">Volver		</a><a data-next-step class="btn">Siguiente </a></div>
+              <div class="section__progress"> 
+                <div class="section__number">5/6</div>
+                <div class="section__progress__bar step--5"> </div>
+              </div>
+            </div>
+          </div>
+          <div data-index="6" class="section__step">
+            <div class="section__header">
+              <h2 class="section__title">Juan, lo más importante</h2>
+              <p class="section__description">¿Que carrera quieres estudiar?</p>
+              <div class="section__options">	
+                <div class="section__option"> </div>
+                <div class="section__option"> </div>
+              </div>
+            </div>
+            <div class="section__body">
+              <div class="section__bg"> 
+                <div class="bg"> <img src="img/uploads/2.jpg"></div>
+              </div>
+              <div class="section__wrap">
+                <div class="section__form__box"> 
+                  <div class="section__form__title">Carrera</div>
+                  <div class="form__element"> 
+                    <div class="form__title">Selecciona tu carrera</div>
+                    <div class="form__input"> 
+                      <select name="#">
+                        <option value="#">Lorem</option>
+                        <option value="#">Ipsum</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__element"> 
+                    <div class="form__title">Selecciona tu sede</div>
+                    <div class="form__input"> 
+                      <select name="#">
+                        <option value="#">Lorem</option>
+                        <option value="#">Ipsum</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section__footer">
+              <div class="section__buttons"> <a data-prev-step class="btn btn--gray">Volver		</a>
+                <button class="btn">Siguiente </button>
+              </div>
+              <div class="section__progress"> 
+                <div class="section__number">6/6</div>
+                <div class="section__progress__bar step--6"> </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <div class="loader loader--show">
+        <div class="loader__bg"> 
+          <div class="bg"> <img src="img/uploads/2.jpg"></div>
+        </div>
+        <div class="loader__body"> 
+          <div class="loader__icon"> <img src="img/icons/rocket.gif"></div>
+          <div class="loader__title">Tu futuro está cerca de despegar</div>
+          <p class="loader__description">Estamos calculando tu resultado</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__wrap">
+        <div class="cols">
+          <div class="footer__flex footer__flex--mobile"> 
+            <div class="col-xs-6"> 
+              <div class="footer__icon"> <img src="img/icons/logo_cert_1.png"></div>
+            </div>
+            <div class="col-xs-6">
+              <div class="footer__wp"> 
+                <div class="footer__info"> 
+                  <h5 class="footer__title">¿Tienes dudas?</h5>
+                  <div class="footer__text">Contáctanos</div>
+                </div>
+                <div class="footer__icon"> <img src="img/icons/whatsapp.png"></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__flex">
+            <div class="col-lg-7">
+              <div class="footer__icons"><img src="img/icons/logo_cert_barra.png"></div>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer__socials"> 
+                <h4 class="footer__title">Redes sociales </h4>
+                <div class="footer__socials__socials"> 
+                  <div class="footer__social"><a href="#"><span class="fa fa-facebook"></span></a></div>
+                  <div class="footer__social"><a href="#"><span class="fa fa-twitter"></span></a></div>
+                  <div class="footer__social"><a href="#"><span class="fa fa-instagram"></span></a></div>
+                  <div class="footer__social"><a href="#"><span class="fa fa-youtube"></span></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="footer__wp"> 
+                <div class="footer__info"> 
+                  <h5 class="footer__title">¿Tienes dudas?</h5>
+                  <div class="footer__text">Contáctanos</div>
+                </div>
+                <div class="footer__icon"> <img src="img/icons/whatsapp.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
