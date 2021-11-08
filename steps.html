@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/icons/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=81537" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=81537" type="text/javascript"></script>
+    <link href="css/main.css?v=82448" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=82448" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -33,7 +33,7 @@
     </header>
     <div id="sections">
       <section class="section--steps">
-        <form class="form">
+        <form class="form form--submit">
           <div data-index="1" class="section__step section__step--show">
             <div class="section__wrap">
               <div class="section__body">
@@ -44,7 +44,7 @@
                   <div class="section__form"> 
                     <div class="form__element"> 
                       <div class="form__input">
-                        <input type="text" placeholder="Ingrese su nombre">
+                        <input type="text" placeholder="Ingrese su nombre" class="input-name">
                       </div>
                     </div>
                   </div>
@@ -59,7 +59,7 @@
           </div>
           <div data-index="2" class="section__step">
             <div class="section__header">
-              <h2 class="section__title">Hola Juan,</h2>
+              <h2 class="section__title">Hola <strong>Juan</strong>,</h2>
               <p class="section__description">Ingresa tu RUT y correo</p>
             </div>
             <div class="section__body">
@@ -103,7 +103,7 @@
           </div>
           <div data-index="3" class="section__step">
             <div class="section__header">
-              <h2 class="section__title">Juan, ¿nos darías tus datos?</h2>
+              <h2 class="section__title"><strong>Juan</strong>, ¿nos darías tus datos?</h2>
               <p class="section__description">Para poder armar tu perfil</p>
             </div>
             <div class="section__body">
@@ -168,14 +168,17 @@
                           </select>
                         </div>
                       </div>
-                      <div class="form__element"> 
+                      <div class="form__element form__element--info">
                         <div class="form__title">Curso</div>
-                        <div class="form__input"> 
-                          <select name="#">
-                            <option disabled>Seleccione su último curso</option>
-                            <option value="#">Lorem</option>
-                            <option value="#">Ipsum	</option>
-                          </select>
+                        <div class="form__flex">
+                          <div class="form__input"> 
+                            <select name="#">
+                              <option disabled>Seleccione su último curso</option>
+                              <option value="#">Lorem</option>
+                              <option value="#">Ipsum</option>
+                            </select>
+                          </div>
+                          <div class="form__info"> <span>!</span></div>
                         </div>
                       </div>
                     </div>
@@ -193,8 +196,9 @@
           </div>
           <div data-index="4" class="section__step">
             <div class="section__header">
-              <h2 class="section__title">Juan, de acuerdo a tus ensayos</h2>
+              <h2 class="section__title"><strong>Juan</strong>, de acuerdo a tus ensayos</h2>
               <p class="section__description">¿qué puntaje crees que podrías obtener en la PDT?</p>
+              <div class="section__header__buttons"> <a href="#" class="btn btn--light">Simular </a><a href="#" class="btn btn--light">Usar puntaje 2021 </a></div>
             </div>
             <div class="section__body">
               <div class="section__bg"> 
@@ -255,9 +259,8 @@
           </div>
           <div data-index="5" class="section__step">
             <div class="section__header">
-              <h2 class="section__title">Juan, ya vamos terminando...</h2>
+              <h2 class="section__title"><strong>Juan</strong>, ya vamos terminando...</h2>
               <p class="section__description">Completa estos datos, que nos ayudarán a calcular el valor de tu carrera.</p>
-              <p class="section__info">Información sobre créditos y becas estatales <a href="#">aquí</a></p>
             </div>
             <div class="section__body">
               <div class="section__bg"> 
@@ -345,7 +348,7 @@
           </div>
           <div data-index="6" class="section__step">
             <div class="section__header">
-              <h2 class="section__title">Juan, lo más importante</h2>
+              <h2 class="section__title"><strong>Juan</strong>, lo más importante</h2>
               <p class="section__description">¿Que carrera quieres estudiar?</p>
               <div class="section__options">	
                 <div class="section__option"> </div>
@@ -392,7 +395,7 @@
           </div>
         </form>
       </section>
-      <div class="loader loader--show">
+      <div class="loader">
         <div class="loader__bg"> 
           <div class="bg"> <img src="img/uploads/2.jpg"></div>
         </div>
