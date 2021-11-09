@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/icons/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=24770" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=24770" type="text/javascript"></script>
+    <link href="css/main.css?v=35189" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=35189" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -90,6 +90,15 @@
                       <input type="text" name="#" placeholder="Ingrese su correo electrónico">
                     </div>
                   </div>
+                  <div class="form__element"> 
+                    <div class="form__title">Captcha</div>
+                    <div class="form__flex"> 
+                      <div class="form__captcha"><img src="img/icons/captcha.png"></div>
+                      <div class="form__input"> 
+                        <input type="text" name="#" placeholder="Ingrese código">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -110,10 +119,10 @@
               <div class="section__bg"> 
                 <div class="bg"> <img src="img/uploads/2.jpg"></div>
               </div>
-              <div class="section__wrap section__wrap--xl">					
+              <div class="section__wrap section__wrap--md">				
                 <div class="cols"> 
                   <div class="col-xs-12 col-md-6">
-                    <div class="section__form__box"> 
+                    <div class="section__form__box section__form__box--minheight">
                       <div class="section__form__title">Información del estudiante</div>
                       <div class="form__element"> 
                         <div class="form__title">Nombre</div>
@@ -136,7 +145,7 @@
                     </div>
                   </div>
                   <div class="col-xs-12 col-md-6">
-                    <div class="section__form__box"> 
+                    <div class="section__form__box section__form__box--minheight">
                       <div class="section__form__title">Información del colegio</div>
                       <div class="form__element"> 
                         <div class="form__title">Región</div>
@@ -210,10 +219,10 @@
               <div class="section__bg"> 
                 <div class="bg"> <img src="img/uploads/2.jpg"></div>
               </div>
-              <div class="section__wrap">
+              <div class="section__wrap section__wrap--md">
                 <div class="cols"> 
-                  <div class="col-xs-12">
-                    <div class="section__form__box"> 
+                  <div class="col-xs-12 col-md-6">
+                    <div class="section__form__box section__form__box--minheight">
                       <div class="section__form__box__header">
                         <div class="section__form__title">Ingresa puntajes PDT</div>
                         <div class="section__form__info">
@@ -250,9 +259,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xs-12">
-                    <div class="section__form__box">
-                      <div class="section__form__box">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="section__form__box section__form__box--minheight">
+                      <div class="section__form__box__header">
                         <div class="section__form__title">Ingresa promedio enseñanza media</div>
                         <div class="section__form__info">
                           <div class="section__form__circle"><span>!</span></div>
@@ -290,10 +299,10 @@
               <div class="section__bg"> 
                 <div class="bg"> <img src="img/uploads/2.jpg"></div>
               </div>
-              <div class="section__wrap">
+              <div class="section__wrap section__wrap--md">
                 <div class="cols"> 
-                  <div class="col-xs-12">
-                    <div class="section__form__box"> 
+                  <div class="col-xs-12 col-md-6">
+                    <div class="section__form__box section__form__box--minheight-2"> 
                       <div class="section__form__title">Información Créditos</div>
                       <div class="form__element__checkbox form__element__checkbox--info">
                         <div class="form__title">¿Crees que vas a utilizar CAE?</div>
@@ -349,8 +358,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xs-12">
-                    <div class="section__form__box"> 
+                  <div class="col-xs-12 col-md-6">
+                    <div class="section__form__box section__form__box--minheight-2">
                       <div class="section__form__title">Información Familiar</div>
                       <div class="form__element form__element--info">
                         <div class="form__title">¿Cuantos integrantes viven en tu casa?</div>
@@ -411,8 +420,22 @@
               <h2 class="section__title"><strong>Juan</strong>, lo más importante</h2>
               <p class="section__description">¿Que carrera quieres estudiar?</p>
               <div class="section__options">	
-                <div class="section__option"> </div>
-                <div class="section__option"> </div>
+                <div class="section__option section__option--checked">
+                  <div class="section__icon"> <img src="img/icons/sun.png"></div>
+                  <div class="section__checkbox">
+                    <label>
+                      <input type="radio" name="horario" value="1" checked class="checkbox-horario">Diurno
+                    </label>
+                  </div>
+                </div>
+                <div class="section__option"> 
+                  <div class="section__icon"> <img src="img/icons/moon.png"></div>
+                  <div class="section__checkbox">
+                    <label>
+                      <input type="radio" name="horario" value="2" class="checkbox-horario">Vespertino
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="section__body">
