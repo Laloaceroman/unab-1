@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/icons/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=35189" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=35189" type="text/javascript"></script>
+    <link href="css/main.css?v=19918" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=19918" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -136,10 +136,11 @@
                           <input type="text" name="#" placeholder="Ingrese sus apellidos">
                         </div>
                       </div>
-                      <div class="form__element"> 
+                      <div class="form__element form__element--phone"> 
                         <div class="form__title">Teléfono celular</div>
-                        <div class="form__input"> 
-                          <input type="text" name="#" placeholder="Ingrese su teléfono celular">
+                        <div class="form__input">
+                          <div class="form__input__phone"> <span>+569 </span></div>
+                          <input type="number" number="phone" name="#" maxlength="8" placeholder="Ingrese su teléfono celular de 8 dígitos" class="input-phone">
                         </div>
                       </div>
                     </div>
@@ -212,7 +213,7 @@
           <div data-index="4" class="section__step">
             <div class="section__header">
               <h2 class="section__title"><strong>Juan</strong>, de acuerdo a tus ensayos</h2>
-              <p class="section__description">¿qué puntaje crees que podrías obtener en la PDT?</p>
+              <p class="section__description">¿Qué puntaje crees que podrías obtener en la PDT?</p>
               <div class="section__header__buttons"> <a href="#" class="btn btn--light">Simular </a><a data-modal-demre class="btn btn--light">Usar puntaje 2021 </a></div>
             </div>
             <div class="section__body">
@@ -234,13 +235,13 @@
                         </div>
                       </div>
                       <div class="form__element"> 
-                        <div class="form__title">Lenguaje y comunicación</div>
+                        <div class="form__title">Comprensión Lectora</div>
                         <div class="form__input"> 
                           <input type="number" name="#" placeholder="Ej: 600">
                         </div>
                       </div>
                       <div class="form__element"> 
-                        <div class="form__title">Matemáticas</div>
+                        <div class="form__title">Matemática</div>
                         <div class="form__input"> 
                           <input type="number" name="#" placeholder="Ej: 600">
                         </div>
@@ -303,7 +304,7 @@
                 <div class="cols"> 
                   <div class="col-xs-12 col-md-6">
                     <div class="section__form__box section__form__box--minheight-2"> 
-                      <div class="section__form__title">Información Créditos</div>
+                      <div class="section__form__title">Información créditos</div>
                       <div class="form__element__checkbox form__element__checkbox--info">
                         <div class="form__title">¿Crees que vas a utilizar CAE?</div>
                         <div class="form__flex">
@@ -351,7 +352,7 @@
                             <div class="form__circle"><span>!</span></div>
                             <div class="form__tooltip"> 
                               <h5>Becas del estado</h5>
-                              <p>Corresponde a un apoyo económico al que puedes acceder dependiendo de tu puntaje y factores socioeconómicos entre otros. Pueden cubrir tu carrera de manera parcial o total y no debes devolverlo al terminar la Universidad.</p>
+                              <p>Corresponde a un apoyo económico al que puedes acceder dependiendo de tu puntaje y factores socioeconómicos, entre otros. Pueden cubrir tu carrera de manera parcial o total y no debes devolverlo al terminar la Universidad.</p>
                             </div>
                           </div>
                         </div>
@@ -360,7 +361,7 @@
                   </div>
                   <div class="col-xs-12 col-md-6">
                     <div class="section__form__box section__form__box--minheight-2">
-                      <div class="section__form__title">Información Familiar</div>
+                      <div class="section__form__title">Información familiar</div>
                       <div class="form__element form__element--info">
                         <div class="form__title">¿Cuantos integrantes viven en tu casa?</div>
                         <div class="form__flex">
@@ -539,12 +540,12 @@
             </div>
           </div>
           <div class="footer__flex">
-            <div class="col-lg-7">
+            <div class="col-lg-6">
               <div class="footer__icons"><img src="img/icons/logo_cert_barra.png"></div>
             </div>
             <div class="col-lg-3">
               <div class="footer__socials"> 
-                <h4 class="footer__title">Redes sociales </h4>
+                <h5 class="footer__title">Redes sociales </h5>
                 <div class="footer__socials__socials"> 
                   <div class="footer__social"><a href="#"><span class="fa fa-facebook"></span></a></div>
                   <div class="footer__social"><a href="#"><span class="fa fa-twitter"></span></a></div>
@@ -553,7 +554,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-3">
               <div class="footer__wp"> 
                 <div class="footer__info"> 
                   <h5 class="footer__title">¿Tienes dudas?</h5>
