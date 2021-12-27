@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/icons/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=12097" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=12097" type="text/javascript"></script>
+    <link href="css/main.css?v=21553" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=21553" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -93,11 +93,11 @@
           <div class="section__actions"> 
             <div class="section__action"> 
               <div class="section__icon"> <img src="img/icons/mail.png"></div>
-              <div class="section__text"> <a href="#">Enviar a mi correo</a></div>
+              <div class="section__text"> <a loader-event>Enviar a mi correo</a></div>
             </div>
             <div class="section__action section__action--red">
               <div class="section__icon"> <img src="img/icons/download.png"></div>
-              <div class="section__text"> <a href="#">Emitir certificado</a></div>
+              <div class="section__text"> <a data-modal-certification>Emitir certificado</a></div>
             </div>
             <div class="section__action"> 
               <div class="section__icon"> <img src="img/icons/download-cyan.png"></div>
@@ -269,25 +269,70 @@
             </ul>
             <div class="section__content__more">
               <ul> 
-                <li>Euismod maecenas turpis vulputate eleifend sollicitudin fusce varius
+                <li>Hendrerit pharetra curabitur convallis neque in ultricies sodales
                 </li>
-                <li>Interdum varius massa nam platea suspendisse adipiscing at
+                <li>Aenean netus potenti dui id at ornare feugiat
                 </li>
-                <li>Quisque volutpat magna nullam primis eros ante potenti
+                <li>In varius libero curabitur arcu aenean a convallis
                 </li>
-                <li>Sapien primis hendrerit enim tortor netus a blandit
+                <li>Lobortis nullam commodo aliquet convallis mollis sagittis torquent
                 </li>
-                <li>Scelerisque vulputate vulputate cursus vestibulum velit sem mi
+                <li>Gravida justo condimentum sed curae a est sed
                 </li>
-                <li>Aliquam suscipit torquent ad tincidunt convallis dictum hac
+                <li>Conubia sagittis massa aliquam colus posuere quis class
                 </li>
-                <li>Aliquam tortor dictum rutrum viverra taciti mollis tempus
+                <li>Per sem vitae volutpat orci integer orci commodo
                 </li>
               </ul>
             </div><a class="section__more">Ver más<span class="fa fa-angle-down"></span></a>
           </div>
         </div>
       </section>
+      <div class="modal modal--certification">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__header">
+              <h4 class="modal__title">Certificado de la beca</h4>
+            </div>
+            <div class="modal__body">
+              <p class="modal__description">Puedes simular cuantas veces quieras y emitir tu beca en distintas carreras.</p>
+              <p class="modal__description">Para que tu certificado de beca sea válido debes: </p>
+              <ul>
+                <li>1. Estar convocado en la UNAB</li>
+                <li>2. Haber ingresado correctamente los datos socioeconómicos (n° de integrantes e ingreso familiar).</li>
+                <li>3. Haber emitido beca con puntajes reales para el proceso de admisión 2022, es decir pruebas rendidas 2020 y 2021.</li>
+              </ul>
+              <form class="form">
+                <div class="cols"> 
+                  <div class="col-xs-12">
+                    <div class="form__element form__element--checkbox">
+                      <label>
+                        <input type="checkbox" name="#" value="No" required>He leído las <a href="#">Observaciones y requisitos de las Becas</a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form__button"> 
+                      <button class="btn">Confirma tu beca aquí</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="loader">
+        <div class="loader__bg"> 
+          <div class="bg"> <img src="img/uploads/2.jpg"></div>
+        </div>
+        <div class="loader__body"> 
+          <div class="loader__icon"> <img src="img/icons/rocket.gif"></div>
+          <div class="loader__title">Estamos enviando el resultado a tu correo.</div>
+        </div>
+      </div>
     </div>
     <footer class="footer--steps">
       <div class="footer__wrap">

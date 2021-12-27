@@ -566,10 +566,21 @@ app.common = {
     });
     $(".form--submit").submit(function(e) {
       e.preventDefault();
-      $(".loader").addClass("loader--show");
+      $(".loader--reload").addClass("loader--show");
       $(".section--steps").hide();
       return setTimeout(function() {
-        return window.location.href = "https://laloaceroman.github.io/unab-1/finish.html";
+        $(".loader--reload").removeClass("loader--show");
+        $(".header__info span").text("Resultados");
+        return $(".section--finish").show();
+      }, 3000);
+    });
+    $("[data-back-simulation]").click(function(e) {
+      $(".loader--back").addClass("loader--show");
+      return setTimeout(function() {
+        $(".loader--back").removeClass("loader--show");
+        $(".section--steps").show();
+        $(".header__info span").text("Carrera y sede");
+        return $(".section--finish").hide();
       }, 3000);
     });
     $(".section__content__more").hide();
@@ -1026,6 +1037,18 @@ app.modal = {
       e.preventDefault();
       return app.modal.open(".modal--demre");
     });
+    $("[data-modal-certification]").click(function(e) {
+      e.preventDefault();
+      return app.modal.open(".modal--certification");
+    });
+    $("[data-modal-certifications-2]").click(function(e) {
+      e.preventDefault();
+      return app.modal.open(".modal--certifications-2");
+    });
+    $("[loader-event]").click(function(e) {
+      e.preventDefault();
+      return $(".loader").addClass("loader--show");
+    });
     $("[data-ejemplo]").click(function(e) {
       e.preventDefault();
       return console.log("click button ejemplo");
@@ -1373,6 +1396,9 @@ app.steps = {
             $(".header__info span").text("Carrera y sede");
           }
         }
+        if (index_int === 3) {
+          $("header .header__certifications").addClass("header__certifications--show");
+        }
         return $(".section__step").each(function() {
           var index_2, index_3;
           index_2 = $(this).attr("data-index");
@@ -1398,7 +1424,23 @@ app.steps = {
         index_3 = parseInt(index_2);
         if (index_int === index_3) {
           $(this).addClass("section__step--show");
-          return document.body.scrollTop = document.documentElement.scrollTop = 0;
+          document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }
+        if (index_int < 4) {
+          $(".header__info span").text("Identificación");
+        } else {
+          if (index_int === 4) {
+            $(".header__info span").text("Puntajes y promedios");
+          }
+          if (index_int === 5) {
+            $(".header__info span").text("Datos económicos");
+          }
+          if (index_int === 6) {
+            $(".header__info span").text("Carrera y sede");
+          }
+        }
+        if (index_int < 3) {
+          return $("header .header__certifications").removeClass("header__certifications--show");
         }
       });
     });
